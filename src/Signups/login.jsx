@@ -52,9 +52,9 @@ const Login = () => {
         <input name='password' type="password" className='h-16 w-72 border-2 border-zinc-900 rounded-md bg-indigo-400'  value={values.password} onChange={handleChange} required/><br/>
         {errors.password && <p className='text-red-600'>{errors.password}</p>}
         <button type="submit" className="text-black bg-indigo-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 h-10 w-40">Login</button>
-        <p>Create an account?
+        <div>Create an account?
       <Link to='/sign-up' className='text-yellow-400'>Sign up</Link>
-      </p>
+      </div>
       </form>
     </div>
   )
